@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>LEDiT</title>
+  <link rel="icon" type="image/x-icon" href="static/images/logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- <div align="center">
+              <img src="static/images/hidiffusion_logo.jpg"  width="260" style="margin-bottom:15px">
+            </div> -->
+            <h1 class="title is-3 publication-title">LEDiT:  Your Length-Extrapolatable Diffusion Transformer <br> without Positional Encoding</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                Shen Zhang<sup>1</sup><sup>*</sup>,</span>
+                <span class="author-block">
+                  Yaning Tan<sup>2</sup><sup>*</sup>,</span>
+                  <span class="author-block">
+                    Siyuan Liang<sup>1</sup><sup>*</sup>,</span>
+                    <span class="author-block">
+                      Zhaowei Chen<sup>2</sup>,</span>
+                        <span class="author-block">
+                          Linze Li<sup>1</sup>,</span>
+                          <span class="author-block">
+                            Ge Wu<sup>3</sup>,</span>
+                            <span class="author-block">
+                              Yuhao Chen<sup>1</sup>,</span>
+                              <br>
+                              <span class="author-block">
+                                Shuheng Li<sup>1</sup>,</span>
+                                <span class="author-block">
+                                  Zhenyu Zhao<sup>1</sup>,</span>
+                                  <span class="author-block">
+                                    Caihua Chen<sup>2</sup>,</span>
+                            <span class="author-block">
+                              Jiajun Liang<sup>1</sup><sup>&#8224</sup></span>
+                              <span class="author-block">
+                                Yao Tang<sup>1</sup><sup>&#8224</sup></span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>JIIOV Technology, 
+                      <sup>2</sup>Nanjing University,
+                      <sup>2</sup>Nankai University
+                       <!-- <br>Conferance name and year</span> -->
+                    <span class="eql-cntrb"><br><sup>*</sup> Indicates equal contribution, &#8224</sup> Indicates corresponding author</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2311.17528.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/megvii-model/HiDiffusion" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <h2 class="title is-4" style="margin-top:-40px" align="center"> Increases the resolution and speed of your diffusion models <i>by only adding a single line of code.</i></h2> -->
+<!-- <h2 class="title is-4" style="margin-top:-20px" align="center"><i>by only adding a single line of code</i>.</h2> -->
+
+<section class="section hero">
+  <div class="columns is-centered has-text-centered">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">
+      High-quality Images beyond the Training Resolution
+    </h2> 
+    <img src="static/images/imgs_teaser.jpg" alt="MY ALT TEXT"/>
+    Arbitrary-resolution samples (512<sup>2</sup>, 512x256, 256x512, 384<sup>2</sup>, 256<sup>2</sup>, 128<sup>2</sup>). Generated by LEDiT trained on ImageNet 256x256.  <br>
+    LEDiT can generate high-quality images with fine details beyond the training resolution.
+  </div>
+  </div>
+  </section>
+
+<!-- Paper abstract -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Diffusion transformers (DiTs) struggle to generate images at resolutions higher than their training resolutions. The primary  obstacle is that the explicit positional encodings(PE), such as RoPE, need extrapolation which degrades performance when the inference resolution
+            differs from training.
+             In this paper, we propose a Length-Extrapolatable Diffusion Transformer(LEDiT), a simple yet powerful architecture to overcome this limitation.  LEDiT needs no explicit PEs, thereby avoiding extrapolation. The key innovations of LEDiT are introducing causal attention to implicitly impart global positional information to tokens, while enhancing locality to precisely distinguish adjacent tokens. Experiments on 256x256 and 512x512 ImageNet show that LEDiT can scale the inference resolution to 512x512 and 1024x1024, respectively, while achieving better image quality compared to current state-of-the-art 
+             length extrapolation methods(NTK-aware, YaRN).  Moreover, LEDiT achieves strong extrapolation performance with just 100k steps of fine-tuning on a pretrained DiT, demonstrating its potential for integration into existing text-to-image DiTs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3">Method</h2> -->
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/fig2_comp.jpg" alt="MY ALT TEXT"/ width="100%" style="margin-top:-85px">
+            <h2 class="subtitle has-text-centered">
+            <!-- </h2> -->
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/architec.jpg" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+              Our LEDiT model does not require explicit position encoding. The main difference lies in the incorporation of causal attention and convolution after patchification.
+            </h2>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero">
+  <div class="columns is-centered has-text-centered">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">
+      Comparison
+    </h2>
+    <img src="static/images/img_comparison.jpg" alt="MY ALT TEXT"/>
+    Qualitative comparison with other methods beyond the training resolution.
+    <img src="static/images/img_comparison_non_square.jpg" alt="MY ALT TEXT"/>
+    Qualitative comparison with other methods when generating non-square images.
+  </div>
+  </div>
+  </section>
+
+
+
+<section class="section hero">
+  <div class="columns is-centered has-text-centered">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">
+      Samples beyond the Training Resolution
+    </h2>
+    <img src="static/images/appendix_imgs_512.jpg" alt="MY ALT TEXT"/>
+    Arbitrary-resolution samples (512<sup>2</sup>, 512x384, 384x512, 384<sup>2</sup>). Generated
+from LEDiT-XL/2 trained on ImageNet 256x256.
+    <img src="static/images/appendix_imgs_1024.jpg" alt="MY ALT TEXT"/>
+    Arbitrary-resolution samples (1024<sup>2</sup>, 1024x768, 768x1024, 768<sup>2</sup>). Generated
+    from LEDiT-XL/2 trained on ImageNet 512x512.
+  </div>
+  </div>
+  </section>
+
+
+  <section class="section hero">
+    <div class="columns is-centered has-text-centered">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">
+        Component Ablations
+      </h2>
+      <img src="static/images/abla_component.jpg" alt="MY ALT TEXT"/>
+      Incorporating causal attention yields structurally coherent objects, While further introducing convolution provides adequate high-frequency details.
+    </div>
+    </div>
+    </section>
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{zhang2023hidiffusion,
+        title={HiDiffusion: Unlocking Higher-Resolution Creativity and Efficiency in Pretrained Diffusion Models},
+        author={Zhang, Shen and Chen, Zhaowei and Zhao, Zhenyu and Chen, Yuhao and Tang, Yao and Liang, Jiajun},
+        journal={arXiv preprint arXiv:2311.17528},
+        year={2023}
+      }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
